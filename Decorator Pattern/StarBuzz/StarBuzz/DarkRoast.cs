@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace StarBuzz
 {
-    public class Espresso:Beverage
+    internal class DarkRoast : Beverage
     {
         public override double Cost()
         {
-            return 1.99;
+            return 0.99;
         }
 
         public override string GetDescription()
         {
-            return "Espresso";
+            return "House Blend Coffee";
         }
     }
 }

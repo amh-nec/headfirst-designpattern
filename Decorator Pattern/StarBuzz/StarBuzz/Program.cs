@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Beverage mocha = new Mocha(new Espresso());
-            Console.WriteLine($"You odrered {((Mocha)mocha).Description} and it costs: {mocha.Cost()}");
+            Beverage mocha = new Whipe(new Mocha(new Mocha(new Espresso())));
+            Console.WriteLine($"You odrered {mocha.GetDescription()} and it costs: {mocha.Cost()}");
         }
     }
 }

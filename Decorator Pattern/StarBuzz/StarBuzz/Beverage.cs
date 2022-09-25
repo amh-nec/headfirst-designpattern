@@ -8,13 +8,7 @@ namespace StarBuzz
 {
     public abstract class Beverage
     {
-        string description = "Unknown Beverage";
-        public string Description
-        {
-            set { description = value; }
-            get { return description; }
-        }
-
         public abstract double Cost();
+        public abstract string GetDescription();
     }
 }
